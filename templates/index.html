@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasco Lenders</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Nasco Lenders - Loan Prediction App</h1>
+    <form action="/predict" method="post">
+        <label for="Gender">Gender:</label>
+        <input type="text" id="Gender" name="Gender" required><br>
+
+        <label for="Married">Married:</label>
+        <input type="text" id="Married" name="Married" required><br>
+
+        <label for="Dependents">Dependents:</label>
+        <input type="text" id="Dependents" name="Dependents" required><br>
+
+        <label for="Education">Education:</label>
+        <input type="text" id="Education" name="Education" required><br>
+
+        <label for="Self_Employed">Self Employed:</label>
+        <input type="text" id="Self_Employed" name="Self_Employed" required><br>
+
+        <label for="ApplicantIncome">Applicant Income:</label>
+        <input type="text" id="ApplicantIncome" name="ApplicantIncome" required><br>
+
+        <label for="CoapplicantIncome">Coapplicant Income:</label>
+        <input type="text" id="CoapplicantIncome" name="CoapplicantIncome" required><br>
+
+        <label for="LoanAmount">Loan Amount:</label>
+        <input type="text" id="LoanAmount" name="LoanAmount" required><br>
+
+        <label for="Loan_Amount_Term">Loan Amount Term:</label>
+        <input type="text" id="Loan_Amount_Term" name="Loan_Amount_Term" required><br>
+
+        <label for="Credit_History">Credit History:</label>
+        <input type="text" id="Credit_History" name="Credit_History" required><br>
+
+        <label for="Property_Area">Property Area:</label>
+        <input type="text" id="Property_Area" name="Property_Area" required><br>
+
+        <button type="submit">Predict Loan</button>
+    </form>
+</body>
+</html>
